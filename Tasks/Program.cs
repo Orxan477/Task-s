@@ -58,8 +58,9 @@ namespace Tasks
                     Console.WriteLine("i=" + i + "   Murekkeb");
                     break;
                 }
+                Console.WriteLine("Sade");
             }
-            Console.WriteLine("Sade");
+            
             #endregion
         }
     }
