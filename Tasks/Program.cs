@@ -299,23 +299,56 @@ namespace Tasks
             #endregion
 
             #region 12. 3 ededden en boyuyunu tapin
-            //Console.WriteLine("Ededleri daxil edin: ");
-            //int a = Convert.ToInt32(Console.ReadLine());
-            //int b = Convert.ToInt32(Console.ReadLine());
-            //int c = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("------------------");
-            //if ((a > b) && (a > c))
-            //{
-            //    Console.WriteLine(a + " ededi boyukdur");
-            //}
-            //else if ((b > a) && (b > c))
-            //{
-            //    Console.WriteLine(b + " ededi boyukdur");
-            //}
-            //else
-            //{
-            //    Console.WriteLine(c + " ededi boyukdur");
-            //}
+            Console.WriteLine("Ededleri daxil edin: ");
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c=");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("------------------");
+            if ((a > b) && (a > c))
+            {
+                Console.WriteLine(a + " ededi boyukdur");
+            }
+            else if ((b > a) && (b > c))
+            {
+                Console.WriteLine(b + " ededi boyukdur");
+            }
+            else if ((c > a) && (c > b))
+            {
+                Console.WriteLine(c + " ededi boyukdur");
+            }
+            else if ((a == b) && (b > c))
+            {
+                Console.WriteLine("a ededi b ededine beraberdir ve "+c+" ededinden boyukdur");
+                
+            }
+            else if (a == b && b < c)
+            {
+                Console.WriteLine(c + " ededi boyukdur");
+            }
+            else if (b == c && a > b)
+            {
+                Console.WriteLine(a + " ededi boyukdur");
+            }
+            else if (b == c && a < b)
+            {
+                Console.WriteLine("b ededi c ededine beraberdir ve " + a + " ededinden boyukdur");
+               
+            }
+            else if (a == c && a < b)
+            {
+                Console.WriteLine(b + " ededi boyukdur");
+            }
+            else if (a == c && a > b)
+            {
+                Console.WriteLine("a ededi c ededine beraberdir ve " + b + " ededinden boyukdur");
+            }
+            else if ((a == b) && (a == c) && (b == c))
+            {
+                Console.WriteLine("Ededler beraberdir");
+            }
             #endregion
         }
     }
